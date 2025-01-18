@@ -123,6 +123,16 @@
             text-decoration: underline;
         }
     </style>
+    <script>
+  document.getElementById('showPassword').addEventListener('change', function() {
+    var passwordField = document.getElementById('password');
+    if (this.checked) {
+      passwordField.type = 'text';
+    } else {
+      passwordField.type = 'password';
+    }
+  });
+</script>
 </head>
 <body>
     <div class="container">
@@ -139,7 +149,8 @@
                 <input type="text" placeholder="ID" required>
                 <input type="email" placeholder="E-Mail" required>
                 <input type="tel" placeholder="Contact" required>
-                <input type="password" placeholder="Password" required>
+                <input type="password" id="password" name="password" required>
+                <input type="checkbox" id="showPassword"> Show Password
                 <button type="submit">SIGN UP</button>
             </form>
             <p class="login-prompt">Already a Member? <a href="#">Login Here</a></p>
@@ -157,5 +168,15 @@
         </div>
     </div>
 </body>
+    <script> 
+  document.getElementById('oneWay').addEventListener('change', function() {
+    document.getElementById('returnDateContainer').style.display = 'none';
+  });
+
+  document.getElementById('return').addEventListener('change', function() {
+    document.getElementById('returnDateContainer').style.display = 'block';
+  });
+</script>
+
 <!-- html and css done by Shona Raghunundan-->
 </html>
