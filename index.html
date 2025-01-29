@@ -21,19 +21,13 @@
             background-image: url("https://github.com/MateoArumugam/CosmoAir/blob/main/Home.png?raw=true");
             background-size: cover;
             background-position: center;
-            overflow-y: auto; /* Enable vertical scrolling */
-            padding: 20px; /* Add some padding to prevent elements from touching the screen edges */
-        }
-
-        .container {
-            display: flex;
+            overflow-y: auto;
+            padding: 20px;
             flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin-top: 20px; /* Added margin for better spacing */
         }
 
         .branding {
+            text-align: center;
             margin-bottom: 30px;
         }
 
@@ -123,60 +117,36 @@
             text-decoration: underline;
         }
     </style>
-    <script>
-  document.getElementById('showPassword').addEventListener('change', function() {
-    var passwordField = document.getElementById('password');
-    if (this.checked) {
-      passwordField.type = 'text';
-    } else {
-      passwordField.type = 'password';
-    }
-  });
-</script>
 </head>
 <body>
-    <div class="container">
-        <div class="branding">
-            <h1 class="brand-name">COSMO AIR</h1>
-            <p class="slogan">Fly With South Africa's Number One Airline</p>
-        </div>
-
-        <div class="signup-form">
-            <h2>The World At Your Fingertips</h2>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="text" placeholder="Surname" required>
-                <input type="text" placeholder="ID" required>
-                <input type="email" placeholder="E-Mail" required>
-                <input type="tel" placeholder="Contact" required>
-                <input type="password" id="password" name="password" required>
-                <input type="checkbox" id="showPassword"> Show Password
-                <button type="submit">SIGN UP</button>
-            </form>
-            <p class="login-prompt">Already a Member? <a href="login.html">Login Here</a></p>
-        </div>
-
-        <div class="social-icons">
-            <a href="https://www.tiktok.com/login"><img src="https://github.com/Shonaaa25/Cosmo-Airlines/blob/main/tiktok.png?raw=true" alt="TikTok"></a>
-            <a href="https://www.facebook.com/"><img src="https://github.com/Shonaaa25/Cosmo-Airlines/blob/main/facebook.png?raw=true" alt="Facebook"></a>
-            <a href="https://www.instagram.com/"><img src="https://github.com/Shonaaa25/Cosmo-Airlines/blob/main/instagram.png?raw=true" alt="Instagram"></a>
-            <a href="https://www.whatsapp.com/"><img src="https://github.com/Shonaaa25/Cosmo-Airlines/blob/main/whatsapp.jpg?raw=true" alt="WhatsApp"></a>
-        </div>
-
-        <div class="help-link">
-            <a href="#">Need Help? Click Here</a>
-        </div>
+    <div class="branding">
+        <h1 class="brand-name">Cosmo Air</h1>
+        <p class="slogan">The World At Your Fingertips</p>
     </div>
+
+    <div class="signup-form">
+        <h2>Sign Up</h2>
+        <form id="registerForm">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="surname" placeholder="Surname" required>
+            <input type="text" name="id" placeholder="User ID" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="contact" placeholder="Contact" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit" id="submitButton">Register</button>
+        </form>
+        <p class="login-prompt">Already a Member? <a href="../Login Page/Login.html">Login Here</a></p>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="tiktok-icon.png" alt="TikTok"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://wa.me/27608419883"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+            <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+        </div>
+        <p class="help-link"><a href="#">Need Help? Click Here</a></p>
+    </footer>
 </body>
-    <script> 
-  document.getElementById('oneWay').addEventListener('change', function() {
-    document.getElementById('returnDateContainer').style.display = 'none';
-  });
-
-  document.getElementById('return').addEventListener('change', function() {
-    document.getElementById('returnDateContainer').style.display = 'block';
-  });
-</script>
-
-<!-- html and css done by Shona Raghunundan-->
 </html>
